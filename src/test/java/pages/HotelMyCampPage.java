@@ -16,12 +16,28 @@ public class HotelMyCampPage {
    @FindBy(xpath="//input[@id='UserName']")
 
     public WebElement userName;
+
     @FindBy(xpath = "//input[@id='Password']")
     public WebElement passwordEmty;
 
     @FindBy(xpath = "//input[@id='btnSubmit']")
   public WebElement loginButonu;
 
+    @FindBy(xpath = "//span[text()='Try again please']")
+    public WebElement girisYapilamadi;
 
+
+    @FindBy(xpath="//span[text()='ListOfUsers']")
+    public WebElement basariliGirisYaziElementi;
+
+
+    public void bekle(int saniye){
+
+        try{
+            Thread.sleep(saniye*1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
 }

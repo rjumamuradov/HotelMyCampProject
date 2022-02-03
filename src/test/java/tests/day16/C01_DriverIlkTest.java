@@ -16,13 +16,13 @@ public class C01_DriverIlkTest {
         //        Assert.assertTrue(titleTest);
         String actualTitle = Driver.getDriver().getTitle();
         Assert.assertTrue(actualTitle.contains("Amazon"));
-        Driver.getDriver().get("http://www.batman.com/");
-
+        //Driver.getDriver().get("https://www.bestbuy.com");
+        Driver.closerDriver();
     }
 
     @Test
     public void testDc() {
-        Driver.getDriver().get("https://www.");
+        Driver.getDriver().get("https://www.bestbuy.com");
 
 
     }
