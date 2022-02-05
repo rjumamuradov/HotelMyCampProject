@@ -21,7 +21,8 @@ public class Driver {
     public static WebDriver getDriver() {
 
         if (driver == null) {
-
+            // bu if sayesinde kod calisirken bir kere new keyword ile driver olusturulaca
+            // diger kullanimlarda new devreye girmeyecek
 
 
             switch(ConfigReader.getProperty("browser")){
@@ -54,6 +55,9 @@ public class Driver {
                //    WebDriverManager.explorerdriver().setup();
                //    driver = new ExplorerDriver();
                //    break;
+                default:
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver();
 
 
             }

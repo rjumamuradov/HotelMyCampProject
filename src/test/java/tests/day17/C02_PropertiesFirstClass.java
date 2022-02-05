@@ -18,10 +18,10 @@ public class C02_PropertiesFirstClass {
         hotelMyCampPage.firstLoginButton.click();
         //    test data username: manager ,
 
-        hotelMyCampPage.userName.sendKeys(ConfigReader.getProperty("HMCValidUsername"));
+        hotelMyCampPage.usernameBox.sendKeys(ConfigReader.getProperty("HMCValidUsername"));
         //    test data password : Manager1!
 
-        hotelMyCampPage.passwordEmty.sendKeys(ConfigReader.getProperty("HMCValidPassword"));
+        hotelMyCampPage.passwordBox.sendKeys(ConfigReader.getProperty("HMCValidPassword"));
         hotelMyCampPage.bekle(3);
         hotelMyCampPage.loginButonu.click();
         //    Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et

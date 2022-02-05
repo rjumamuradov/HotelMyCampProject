@@ -16,10 +16,10 @@ public class C04_HotelMyCampPositiveLogin {
         HotelMyCampPage hotelMyCampPage=new HotelMyCampPage();
         hotelMyCampPage.firstLoginButton.click();
         //	test data username: manager ,
-        hotelMyCampPage.userName.sendKeys("manager");
+        hotelMyCampPage.usernameBox.sendKeys("manager");
 
         //	test data password : Manager1!
-        hotelMyCampPage.passwordEmty.sendKeys("Manager1!");
+        hotelMyCampPage.passwordBox.sendKeys("Manager1!");
         hotelMyCampPage.loginButonu.click();
 
         //	Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et

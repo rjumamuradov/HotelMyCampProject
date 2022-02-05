@@ -11,12 +11,12 @@ public class ConfigReader {
 
 
     static {
-        String path="src/test/configuration.properties";
+        String path = "src/test/configuration.properties";
         try {
-            FileInputStream fis=new FileInputStream(path);
-                properties = new Properties();
-                properties.load(fis);
-                fis.close();
+            FileInputStream fis = new FileInputStream(path);
+            properties = new Properties();
+            properties.load(fis);
+            fis.close();
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -24,9 +24,8 @@ public class ConfigReader {
 
     }
 
-    public static String getProperty(String key){
+    public static String getProperty(String key) {
         return properties.getProperty(key);
-
 
 
     }

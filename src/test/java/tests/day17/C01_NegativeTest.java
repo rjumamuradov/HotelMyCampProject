@@ -1,6 +1,5 @@
 package tests.day17;
 
-import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HotelMyCampPage;
@@ -26,13 +25,13 @@ public class C01_NegativeTest {
         hotelMyCampPage.firstLoginButton.click();
 
         //    test data username: manager1 ,
-        hotelMyCampPage.userName.sendKeys("manager1");
+        hotelMyCampPage.usernameBox.sendKeys("manager1");
         //    test data password : manager1!
-        hotelMyCampPage.passwordEmty.sendKeys("manager1");
+        hotelMyCampPage.passwordBox.sendKeys("manager1");
         hotelMyCampPage.loginButonu.click();
 
         //    Degerleri girildiginde sayfaya girilemedigini test et
-        Assert.assertTrue(hotelMyCampPage.girisYapilamadi.isDisplayed());
+        Assert.assertTrue(hotelMyCampPage.girisYapilamadiYaziElementi.isDisplayed());
 
 
     }
