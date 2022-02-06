@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -26,7 +27,17 @@ public class HMCWebTablePage {
     @FindBy(xpath = "//tbody//td")
     public List<WebElement> tumBodyDatalariList;
 
+@FindBy(xpath = "((//tbody//tr)[2]//td)[1]")
+    public List<WebElement> satirlarListesi;
 
+    public WebElement satirYazdur(int satirNo) {
 
+        String satirDinamicXpath = "//tbody//tr[" + satirNo + "]";
+
+        WebElement satirElementi = Driver.getDriver().findElement(By.xpath(satirDinamicXpath));
+
+        return satirElementi;
+    }
 
 }
+
