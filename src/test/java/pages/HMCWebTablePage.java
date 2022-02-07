@@ -8,7 +8,7 @@ import utilities.Driver;
 
 import java.util.List;
 
-public class HMCWebTablePage {
+public class  HMCWebTablePage {
 
     public HMCWebTablePage() {
         PageFactory.initElements(Driver.getDriver(), this);
@@ -30,7 +30,7 @@ public class HMCWebTablePage {
 @FindBy(xpath = "((//tbody//tr)[2]//td)[1]")
     public List<WebElement> satirlarListesi;
 
-    public WebElement satirYazdur(int satirNo) {
+    public WebElement satirYazdir(int satirNo) {
 
         String satirDinamicXpath = "//tbody//tr[" + satirNo + "]";
 

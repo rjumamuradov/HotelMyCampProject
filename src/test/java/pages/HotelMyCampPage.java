@@ -49,8 +49,17 @@ public class HotelMyCampPage {
     @FindBy(xpath = "//button[@id='btnSubmit']")
     public WebElement addHotelSaveButonu;
 
+    @FindBy(xpath = "//div[@class='bootbox-body']")
+    public WebElement textOfWarningBox;
 
+    @FindBy(xpath = "//button[@class='btn btn-primary']")
+    public WebElement okButton;
 
+    @FindBy(xpath = "//a[@href='/admin/HotelRoomAdmin']")
+    public WebElement hotelRoomsLink;
+
+    @FindBy(xpath = "//span[@class='caption-subject font-green-sharp bold uppercase']")
+    public WebElement textOfHotelRooms;
 
     public void bekle(int saniye){
 

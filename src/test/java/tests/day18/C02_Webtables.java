@@ -10,7 +10,6 @@ import java.util.List;
 public class C02_Webtables {
     HotelMyCampPage hotelMyCampPage;
     HMCWebTablePage hmcWebTablePage;
-
     @Test
     public void loginT() {
         //● Bir class oluşturun : C02_WebTables
@@ -21,9 +20,7 @@ public class C02_Webtables {
         //			○ Password : Manager1!
         hotelMyCampPage = new HotelMyCampPage();
         hotelMyCampPage.girisYap();
-
     }
-
     @Test
     public void table() {
         //● table( ) metodu oluşturun
@@ -36,7 +33,6 @@ public class C02_Webtables {
 
         //			○ Table’daki tum body’i ve başlıkları(headers) konsolda yazdırın.
         //       //tbody
-
         System.out.println(hmcWebTablePage.tumBodyWebElement.getText());
         // Eger body'yi tek bir webelement olarak locate edersek
         // icindeki tum datalari getText() ile yazdirabiliriz
@@ -44,22 +40,18 @@ public class C02_Webtables {
         // body'nin icindeki tek bir String'in parcalari olurlar
         // dolayisiyla bu elementlere tek tek ulasmamiz mumkun olmaz
         // sadece contains method'u ile body'de olup olmadiklarini test edebiliriz.
-
         // eger her bir datayi ayri ayri almak istersek
         //  //tbody//td seklinde locate edip bir list'e atabiliriz
-
         List<WebElement> bodyTumDataList = hmcWebTablePage.tumBodyDatalariList;
-
         System.out.println("body'deki data sayisi : " + bodyTumDataList.size());
 
-
     }
-
-
     @Test
     public void printRows() {
         //● printRows( ) metodu oluşturun //tr
         //			○ table body’sinde bulunan toplam satir(row) sayısını bulun.
+        //tbody//tr
+
         //			○ Table body’sinde bulunan satirlari(rows) konsolda yazdırın.
         //			○ 4.satirdaki(row) elementleri konsolda yazdırın.
     }
