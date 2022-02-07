@@ -27,10 +27,10 @@ public class  HMCWebTablePage {
     @FindBy(xpath = "//tbody//td")
     public List<WebElement> tumBodyDatalariList;
 
-@FindBy(xpath = "((//tbody//tr)[2]//td)[1]")
+@FindBy(xpath = "//tbody//tr")  //   ((//tbody//tr)[2]//td)[1]
     public List<WebElement> satirlarListesi;
 
-    public WebElement satirYazdir(int satirNo) {
+    public  WebElement satirGetir(int satirNo) {
 
         String satirDinamicXpath = "//tbody//tr[" + satirNo + "]";
 

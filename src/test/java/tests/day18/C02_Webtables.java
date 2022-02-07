@@ -46,13 +46,21 @@ public class C02_Webtables {
         System.out.println("body'deki data sayisi : " + bodyTumDataList.size());
 
     }
-    @Test
+    @Test (dependsOnMethods = "loginT")
     public void printRows() {
         //● printRows( ) metodu oluşturun //tr
         //			○ table body’sinde bulunan toplam satir(row) sayısını bulun.
-        //tbody//tr
+       hmcWebTablePage=new HMCWebTablePage();
+        System.out.println("hmcWebTablePage.satirlarListesi.size() = " + hmcWebTablePage.satirlarListesi.size());
 
+        //tbody//tr
+            List<WebElement> satirlarWebElementListesi=hmcWebTablePage.satirlarListesi;
+        for (WebElement each:satirlarWebElementListesi) {
+            System.out.println("each.getText() = " + each.getText());
+        }
         //			○ Table body’sinde bulunan satirlari(rows) konsolda yazdırın.
         //			○ 4.satirdaki(row) elementleri konsolda yazdırın.
+
+        System.out.println("satirlarWebElementListesi.get(3).getText() = " + satirlarWebElementListesi.get(3).getText());
     }
 }
