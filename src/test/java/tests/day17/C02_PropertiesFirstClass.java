@@ -8,7 +8,7 @@ import utilities.Driver;
 
 public class C02_PropertiesFirstClass {
     @Test
-    public void PozitiveLoginTesti() {
+    public void pozitiveLoginTesti() {
 
         //https://www. hotelmycamp.com/ adresine git
         Driver.getDriver().get(ConfigReader.getProperty("HMCUrl"));
