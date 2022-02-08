@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ReusableMethods {
+public class ExcelReusableMethods {
     public static Map<String, String> mapOlustur(String path, String sayfaAdi) {
         Map<String ,String> excelMap = new HashMap();
         Workbook workbook=null;

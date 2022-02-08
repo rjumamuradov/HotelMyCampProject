@@ -7,7 +7,7 @@ public class C05_ExceliMapeYukleme {
     public void test(){
         String path = "src/test/java/resources/ulkeler.xlsx/";
         String sayfaAdi="Sayfa1";
-        ReusableMethods.mapOlustur(path, sayfaAdi);
+        ExcelReusableMethods.mapOlustur(path, sayfaAdi);
 
 
     }
