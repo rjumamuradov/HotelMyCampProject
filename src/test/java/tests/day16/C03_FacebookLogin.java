@@ -2,11 +2,12 @@ package tests.day16;
 
 import com.github.javafaker.Faker;
 import org.testng.annotations.Test;
-import pages.Facebookpage;
+
+import pages.FacebookPage;
 import utilities.Driver;
 
 public class C03_FacebookLogin {
-    Facebookpage facebookPage = new Facebookpage();
+    FacebookPage facebookPage = new FacebookPage();
 
     @Test
     public void testFacebook() {
