@@ -3,7 +3,9 @@
     <test name="Html reports">
         <classes>
             <!--yorum yazmak icin  -->
-            <class name="tests.practice.P1_DemoGuruTest"></class>
+            <class name="tests.practice.P1_DemoGuruTest">
+                
+            </class>
         </classes>
     </test>
 </suite>
