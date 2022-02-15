@@ -14,7 +14,7 @@ public class C02PageIlkClass {
 
 
         amazonPage.amazonAramaKutusu.sendKeys("Nutella" + Keys.ENTER);
-        Driver.closerDriver();
+        Driver.closeDriver();
 
 
     }
@@ -23,7 +23,7 @@ public class C02PageIlkClass {
     public void test1() throws InterruptedException {
 
         Driver.getDriver().get("http://www.batman.com");
-        Driver.closerDriver();
+        Driver.closeDriver();
 
     }
 }

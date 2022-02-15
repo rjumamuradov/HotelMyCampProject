@@ -31,7 +31,7 @@ public class PositiveLoginTest {
         //Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
         Assert.assertTrue(hotelMyCampPage.basariliGirisYaziElementi.isDisplayed());
 
-        Driver.closerDriver();
+        Driver.closeDriver();
     }
 
 }

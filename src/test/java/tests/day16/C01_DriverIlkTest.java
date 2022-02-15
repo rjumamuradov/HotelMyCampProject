@@ -17,7 +17,7 @@ public class C01_DriverIlkTest {
         String actualTitle = Driver.getDriver().getTitle();
         Assert.assertTrue(actualTitle.contains("Amazon"));
         //Driver.getDriver().get("https://www.bestbuy.com");
-        Driver.closerDriver();
+        Driver.closeDriver();
     }
 
     @Test

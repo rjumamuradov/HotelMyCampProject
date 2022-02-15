@@ -33,6 +33,6 @@ public class C01_TestNGReports extends TestBaseRapor {
 
         ReusableMethods.getScreenshot("WindowSwitch");
 
-        Driver.closerDriver();
+        Driver.closeDriver();
     }
 }

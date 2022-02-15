@@ -46,6 +46,6 @@ public class C02_WindowHandleReusablemethods {
         Assert.assertEquals(actualTitle, expectedTitle,"yokk");
 
         ReusableMethods.getScreenshot("WindowSwitch");
-        Driver.closerDriver();
+        Driver.closeDriver();
     }
 }

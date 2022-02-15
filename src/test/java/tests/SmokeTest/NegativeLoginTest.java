@@ -27,7 +27,7 @@ public class NegativeLoginTest {
         hotelMyCampPage.passwordBox.sendKeys(ConfigReader.getProperty("HMCWrongPassword"));
         hotelMyCampPage.loginButonu.click();
         Assert.assertTrue(hotelMyCampPage.girisYapilamadiYaziElementi.isDisplayed());
-        Driver.closerDriver();
+        Driver.closeDriver();
     }
 
     @Test
@@ -39,7 +39,7 @@ public class NegativeLoginTest {
         hotelMyCampPage.passwordBox.sendKeys(ConfigReader.getProperty("HMCValidPassword"));
         hotelMyCampPage.loginButonu.click();
         Assert.assertTrue(hotelMyCampPage.girisYapilamadiYaziElementi.isDisplayed());
-        Driver.closerDriver();
+        Driver.closeDriver();
     }
     @Test
     public void yanlisSifreUsernameTesti(){
@@ -50,7 +50,7 @@ public class NegativeLoginTest {
         hotelMyCampPage.passwordBox.sendKeys(ConfigReader.getProperty("HMCWrongPassword"));
         hotelMyCampPage.loginButonu.click();
         Assert.assertTrue(hotelMyCampPage.girisYapilamadiYaziElementi.isDisplayed());
-        Driver.closerDriver();
+        Driver.closeDriver();
     }
 
 }
